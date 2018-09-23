@@ -8,7 +8,7 @@
 }
 
 body,
-body *{
+body * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -25,9 +25,14 @@ body *{
     height: 100vh;
     filter: blur(0px);
   }
-  .content {
-
+  @media screen and (max-width: 480px) {
+    .bg-img {
+      height: 100vh;
+    }
   }
+  .content {
+  }
+
   body {
     /*background-image: url(https://picsum.photos/g/1920/1080/?blur);*/
   }
@@ -45,21 +50,21 @@ body *{
         box-shadow: 11px 12px 85px 0px rgba(0, 0, 0, 0.2);
       }
 
-      @media screen and (max-width: 480px){
-        body > div {
-          display: block;
-          width: 96%;
-          height: 1000px;
-          margin-left: calc(50% - 48%);
-          margin-top: 2em;
-          background-color: white;
-        }
-          body > div > div {
-            display: block;
-            float: none;
-            box-shadow: 11px 12px 85px 0px rgba(0, 0, 0, 0.2);
-          }
+    @media screen and (max-width: 480px) {
+      body > div {
+        display: inline-block;
+        float: left;
+        width: 90%;
+        height: auto;
+        margin-left: calc(50% - 45%);
+        margin-top: 0;
       }
+        body > div > div {
+          display: inline-block;
+          float: left;
+          box-shadow: 11px 12px 85px 0px rgba(0, 0, 0, 0.2);
+        }
+    }
   .signup {
     position: relative;
     width: 40%;
@@ -75,8 +80,8 @@ body *{
       color: White;
       font-size: 62px;
       font-weight: lighter;
-      margin-left: 12%;
-      margin-top: 8%;
+      margin-left: 10%;
+      margin-top: 4%;
     }
     .signup > div {
       position: absolute;
@@ -89,18 +94,19 @@ body *{
         text-decoration: underline;
         text-decoration-style:dotted;
       }
-
-  @media screen and (max-width: 768px){
+  @media screen and (max-width:480px) {
     .signup {
-      background-color: red;
-      background-image: url();
+      width: 100%;
+      height: 300px;
+      margin-top: 2em;
     }
-  }
-  @media screen and (max-width: 480px){
-    .signup {
-      background-color: yellow;
-      background-image: url();
-    }
+      .signup > h1 {
+      }
+      .signup > div {
+        margin-top: 270px;
+      }
+        .signup > div > a {
+        }
   }
 
 
@@ -109,6 +115,7 @@ body *{
     width: 60%;
     height: 100%;
     padding: 80px;
+    margin-bottom: 2em;
   }
     .register > form {
       text-transform: uppercase;
@@ -159,3 +166,28 @@ body *{
           color: var(--accent);
           text-decoration: none;
         }
+  @media screen and (max-width:480px) {
+    .register {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+    }
+      .register > form {
+        font-size: 1em;
+        font-weight: 500;
+      }
+        .register > form > input[type=text], [type=password], select {
+          width: 100%;
+          padding: 12px 15px;
+          margin: 5px 0px 35px 0px;
+          font-size: 1.2em;
+        }
+        .register > form > input[type=submit] {
+        }
+        .register > form > div {
+        }
+          .register > form > div > span {
+        }
+          .register > form > div > a {
+          }
+  }
