@@ -45,7 +45,7 @@ body *{
         box-shadow: 11px 12px 85px 0px rgba(0, 0, 0, 0.2);
       }
 
-      @media screen and (max-width:1000px){
+      @media screen and (max-width:500px){
         body > div {
           display: block;
           width: 96%;
@@ -89,10 +89,10 @@ body *{
         text-decoration: underline;
         text-decoration-style:dotted;
       }
-  @media screen and (max-width:1000px){
+  @media screen and (max-width: 500px){
     .signup {
       background-image: url();
-      background-color: red;
+      background-color: green;
     }
   }
 
