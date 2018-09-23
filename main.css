@@ -96,9 +96,10 @@ body * {
       }
   @media screen and (max-width:480px) {
     .signup {
-      width: 100%;
+      width: 90%;
       height: 300px;
       margin-top: 2em;
+      margin-left: calc( 50% - 90% / 2);
     }
       .signup > h1 {
       }
