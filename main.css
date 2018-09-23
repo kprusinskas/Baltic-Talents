@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+:root {
+  --mainBG: aliceblue;
+  --accent: #6a8dba;
+  --hlink: white;
+  --black: black;
+}
+
+body,
+body *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-family: 'Quicksand', sans-serif;
+}
+  .bg-img {
+    display: block;
+    background: url("img/RoadTrip_ICELAND_2017-10-21_0041-edit.JPG");
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    filter: blur(0px);
+  }
+  .content {
+
+  }
+  body {
+    /*background-image: url(https://picsum.photos/g/1920/1080/?blur);*/
+  }
+    body > div {
+      display: inline-block;
+      width: 1000px;
+      height: 700px;
+      /*background-color: white;*/
+      margin-left: calc(50% - 500px);
+      margin-top: calc(50vh - 350px);
+    }
+    @media screen and (max-width:1000px){
+      .signup {
+        background-image: url();
+        background-color: red;
+      }
+    }
+      body > div > div {
+        display: block;
+        float: left;
+        box-shadow: 11px 12px 85px 0px rgba(0, 0, 0, 0.2);
+      }
+  .signup {
+    position: relative;
+    width: 40%;
+    height: 600px;
+    margin-top: 50px;
+    background-image: url("img/RoadTrip_ICELAND_2017-10-21_0041.JPG");
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+    .signup > h1 {
+      position: absolute;
+      color: White;
+      font-size: 62px;
+      font-weight: lighter;
+      margin-left: 12%;
+      margin-top: 8%;
+    }
+    .signup > div {
+      position: absolute;
+      margin-top: 550px;
+      margin-left: calc(50% - 120px);
+      color: Snow;
+    }
+      .signup > div > a {
+        color: Snow;
+        text-decoration: underline;
+        text-decoration-style:dotted;
+      }
+  @media screen and (max-width:1000px){
+    .signup {
+      background-image: url();
+      background-color: red;
+    }
+  }
+
+
+  .register {
+    background-color: var(--mainBG);
+    width: 60%;
+    height: 100%;
+    padding: 80px;
+  }
+    .register > form {
+      text-transform: uppercase;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 500;
+    }
+      .register > form > input[type=text], [type=password], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 10px 0px 45px 0px;
+        display: inline-block;
+        border: solid #ccc;
+        border-width: 0px 0px 1px 0px;
+        background-color: var(--mainBG);
+        font-size: 18px;
+        /*border-radius: 4px;*/
+        box-sizing: border-box;
+      }
+      .register > form > input[type=submit] {
+        width: 50%;
+        background-color: var(--accent);
+        color: var(--hlink);
+        padding: 12px 18px;
+        margin: 8px 0px;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .register > form > div {
+        display: inline-block;
+        float: right;
+        width: 50%;
+        padding: 12px 18px;
+        margin-top: 8px;
+        text-transform: none;
+        font-size: 18px;
+        text-align: center;
+      }
+        .register > form > div > span {
+          color: var(--black);
+          font-weight: 300;
+        }
+        .register > form > div > a {
+          color: var(--accent);
+          text-decoration: none;
+        }
