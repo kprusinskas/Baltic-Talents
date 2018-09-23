@@ -39,16 +39,26 @@ body *{
       margin-left: calc(50% - 500px);
       margin-top: calc(50vh - 350px);
     }
-    @media screen and (max-width:1000px){
-      .signup {
-        background-image: url();
-        background-color: red;
-      }
-    }
       body > div > div {
         display: block;
         float: left;
         box-shadow: 11px 12px 85px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      @media screen and (max-width:1000px){
+        body > div {
+          display: block;
+          width: 96%;
+          height: 1000px;
+          margin-left: calc(50% - 48%);
+          margin-top: 2em;
+          background-color: white;
+        }
+          body > div > div {
+            display: block;
+            float: none;
+            box-shadow: 11px 12px 85px 0px rgba(0, 0, 0, 0.2);
+          }
       }
   .signup {
     position: relative;
